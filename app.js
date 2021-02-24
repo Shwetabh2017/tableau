@@ -1,7 +1,7 @@
 //data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json
 //https://tableau-ten.vercel.app/
 
-console.log("This is working! Shwetabh");
+console.log("This is working! Shwetabh Singh");
 
 (function () {
   var myConnector = tableau.makeConnector();
@@ -55,7 +55,8 @@ console.log("This is working! Shwetabh");
       "https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json",
       function (resp) {
         // Iterate over the JSON object
-        for (i = 0, len = resp.length; i < len; i++) {
+        //for (i = 0, len = resp.length; i < len; i++) {
+            for (i = 0, len = 1000; i < len; i++) {
           tableData.push({
             Date_of_report: resp[i].Date_of_report,
             Municipality_code: resp[i].Municipality_code,
