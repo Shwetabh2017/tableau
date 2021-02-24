@@ -1,7 +1,7 @@
 //data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json
 //https://tableau-ten.vercel.app/
 
-console.log("This is working!");
+console.log("This is working! Shwetabh");
 
 (function () {
   var myConnector = tableau.makeConnector();
@@ -40,7 +40,7 @@ console.log("This is working!");
 
     let covidTableSchema = {
       id: "RIVM",
-      alias: "Dutch Corona Cases since start",
+      alias: "Dutch Corona Cases since start - Simple example by Shwetabh",
       columns: covidCols,
     };
 
@@ -78,6 +78,7 @@ console.log("This is working!");
 document.querySelector("#getData").addEventListener("click", getData);
 
 function getData() {
-  tableau.connectionName = "Dutch Corona Numbers";
+    console.log("Getting data");
+  tableau.connectionName = "Dutch Corona Case Numbers - Simple example by Shwetabh 52 k  cases.";
   tableau.submit();
 }
